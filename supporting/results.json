@@ -1,0 +1,159 @@
+{
+  "metrics": {
+    "accuracy": 0.7908333333333334,
+    "precision_declined": 0.7916279069767442,
+    "recall_declined": 0.7537643932683791,
+    "roc_auc": 0.8674282679853571
+  },
+  "cm": [
+    [
+      1047,
+      224
+    ],
+    [
+      278,
+      851
+    ]
+  ],
+  "threshold": 0.9,
+  "choice": {
+    "threshold": 0.9,
+    "auto_declined_count": 365.0,
+    "auto_declined_pct": 15.208333333333334,
+    "wrongly_declined_count": 17.0,
+    "wrong_among_auto_pct": 4.657534246575342
+  },
+  "policies": [
+    {
+      "policy": "Assignment: all applicants",
+      "auto_count": 365,
+      "wrong_count": 17,
+      "auto_pct": 15.208333333333334,
+      "wrong_pct": 4.657534246575342,
+      "wrong_ci_low_pct": 2.9279597613464707,
+      "wrong_ci_high_pct": 7.331620502918732,
+      "monthly_applications": 456.25,
+      "monthly_hours": 190.10416666666666,
+      "monthly_wrong": 21.25
+    },
+    {
+      "policy": "Safeguard: scored applicants only",
+      "auto_count": 353,
+      "wrong_count": 11,
+      "auto_pct": 14.708333333333334,
+      "wrong_pct": 3.1161473087818696,
+      "wrong_ci_low_pct": 1.7487342941510597,
+      "wrong_ci_high_pct": 5.493022272347914,
+      "monthly_applications": 441.25,
+      "monthly_hours": 183.85416666666666,
+      "monthly_wrong": 13.75
+    }
+  ],
+  "approval_rate": 0.5294166666666666,
+  "score": {
+    "Below 600": 0.02032520325203252,
+    "600\u2013649": 0.03215434083601286,
+    "650\u2013699": 0.3250296559905101,
+    "700\u2013749": 0.5436778205507847,
+    "750\u2013799": 0.7719714964370546,
+    "800+": 0.8518518518518519,
+    "No score": 0.5389797882579404
+  },
+  "employment": {
+    "Gig / Contract": 0.34937712344280863,
+    "Self-Employed Professional": 0.5056022408963585,
+    "Business Owner": 0.5117209834190967,
+    "Salaried": 0.5836757829105852
+  },
+  "foir": {
+    "Below 30%": 0.6547077035148424,
+    "30\u201340%": 0.5895283772981614,
+    "40\u201350%": 0.47845804988662133,
+    "50\u201355%": 0.32514177693761814,
+    "55% and above": 0.1557759626604434
+  },
+  "coefficients": {
+    "numeric__foir": 1.2201900636595904,
+    "numeric__credit_score": -1.0102162803874097,
+    "numeric__delinquencies_24m": 0.9789683292998929,
+    "categorical__employment_type_Gig / Contract": 0.618046166890788,
+    "categorical__employment_type_Salaried": -0.44579268541900197
+  },
+  "below650": 0.029686174724342665,
+  "scored_approval": 0.5285101724295228,
+  "gender_approval": {
+    "Female": 0.5043478260869565,
+    "Male": 0.5410115783059111
+  },
+  "gender_income": {
+    "Female": 45000.0,
+    "Male": 55000.0
+  },
+  "gig_share": {
+    "Female": 0.2137022397891963,
+    "Male": 0.11639244363193176
+  },
+  "comparable": {
+    "Female": {
+      "n": 750,
+      "historical_decline_pct": 49.733333333333334,
+      "auto_decline_pct": 15.6
+    },
+    "Male": {
+      "n": 1650,
+      "historical_decline_pct": 45.81818181818182,
+      "auto_decline_pct": 15.03030303030303
+    }
+  },
+  "audit": {
+    "Female": {
+      "total": 750,
+      "auto_declined": 117,
+      "wrongly_declined": 4,
+      "approved": 377,
+      "wrong_within_auto_pct": 3.4188034188034186,
+      "approved_wrongly_flagged_pct": 1.0610079575596818,
+      "auto_pct": 15.6,
+      "wrong_ci_low_pct": 1.3373625444339232,
+      "wrong_ci_high_pct": 8.461911877619409
+    },
+    "Male": {
+      "total": 1650,
+      "auto_declined": 248,
+      "wrongly_declined": 13,
+      "approved": 894,
+      "wrong_within_auto_pct": 5.241935483870968,
+      "approved_wrongly_flagged_pct": 1.45413870246085,
+      "auto_pct": 15.030303030303031,
+      "wrong_ci_low_pct": 3.0886489292691905,
+      "wrong_ci_high_pct": 8.760703997332293
+    }
+  },
+  "ntc": [
+    {
+      "group": "Scored",
+      "n": 2197,
+      "accuracy": 0.8115612198452435,
+      "majority_baseline": 0.5289030496131089
+    },
+    {
+      "group": "New to credit",
+      "n": 203,
+      "accuracy": 0.5665024630541872,
+      "majority_baseline": 0.5369458128078818
+    }
+  ],
+  "sha256": "17b1e2921cc95e43a2171667753e4ca31eeadbd172418baa8a32329d8d1162df",
+  "python": "3.14.0",
+  "versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.9.1",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0"
+  }
+}
